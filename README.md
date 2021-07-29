@@ -37,4 +37,4 @@ After training model the root mean square deviation was = 0.001063
 We shouldn't forget that this value is for trained data if we put new data that wasn't in a train sample we can obtain worse results. For now, the results are good for prediction new data.
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-   [predictions]: <https://github.com/Armkeyter/XGBoost_for_Anonymous_data/model_predictions.csv>
+   [predictions]: <https://github.com/Armkeyter/XGBoost_for_Anonymous_data/blob/main/model_predictions.csv>
