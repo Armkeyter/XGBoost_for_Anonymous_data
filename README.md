@@ -1,9 +1,9 @@
 # XGBoost for anonymous data
 ## What is  it for?
 This project was made for analysing anonymous data
-Due to the fact that we doesn't know the data we can't expect what factor will be the most informative. As we can see in the file [internship_train.csv][train] in the tabular data we have 53 unknown colomns and colomn 'target'. The last column is responsible for the result of the model. Our task is to obtain the nearest results and with a help of XGBoost. And predict new tagets with [internship_hidden_test.csv] file. ```.head()```
+Due to the fact that we doesn't know the data we can't expect what factor will be the most informative. As we can see in the file [internship_train.csv][train] in the tabular data we have 53 unknown colomns and colomn 'target'. The last column is responsible for the result of the model. Our task is to obtain the nearest results and with a help of XGBoost. And predict new tagets with internship_hidden_test.csv file. ```.head()```
 ## Explanation
--   Let's read [internship_train.csv] data and read 'head' of the file using pandas function
+-   Let's read internship_train.csv data and read 'head' of the file using pandas function
 -   Separate features data and target data
 -   Observe statistics using ```.describe()```
 -   Observe correlation matrix using ```.corr()```. Matrix can show that there is weak correlation between features and we can also check it with a help of Principal Components Analysis (PCA):
@@ -25,7 +25,7 @@ print(pca.explained_variance_)
 ```
 Here we can see, if we want to describe 90% of data we need 48 features that is on 5 features less that we used.
 -   Use XGBRegressor  with these parametrs:
--   Fit model and predict data for [internship_hidden_test.csv]
+-   Fit model and predict data for internship_hidden_test.csv
 -   With a help of GridSearch find better values for XGBoost parametrs
 -   Compare results with target
 -   Save predictions in file [model_predictions.csv][predictions]
@@ -37,4 +37,4 @@ After training model the root mean square deviation was = 0.001063
 We shouldn't forget that this value is for trained data if we put new data that wasn't in a train sample we can obtain worse results. For now, the results are good for prediction new data.
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-   [test]: <https://github.com/Armkeyter/XGBoost_for_Anonymous_data/model_predictions.csv>
+   [predictions]: <https://github.com/Armkeyter/XGBoost_for_Anonymous_data/model_predictions.csv>
